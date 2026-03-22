@@ -106,7 +106,36 @@ nav a {
   margin-bottom: 15px;
 }
 
-/* REVEAL ANIMATION */
+/* CONTACT */
+.contact a {
+  display: block;
+  margin: 10px 0;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+/* ANIMATION */
 .fade {
   opacity: 0;
   transform: translateY(30px);
@@ -195,8 +224,15 @@ footer {
 <!-- CONTACT -->
 <section id="contact" class="section fade">
   <h2>Contact</h2>
-  <p>📞 +91 9947146608</p>
-  <p>📧 info@sysmantech.com</p>
+
+  <div class="contact">
+    <a href="tel:+919947146608">📞 +91 99471 46608</a>
+    <a href="mailto:mail@sysmante.ch">📧 mail@sysmante.ch</a>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/919947146608" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
 </section>
 
 <footer>
@@ -204,7 +240,6 @@ footer {
 </footer>
 
 <script>
-// scroll animation
 const faders = document.querySelectorAll(".fade");
 
 window.addEventListener("scroll", () => {
