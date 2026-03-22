@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-  background: #000;
+  background: linear-gradient(180deg, #000, #020617);
   color: white;
   text-align: center;
 }
@@ -21,78 +21,53 @@ body {
   padding: 60px 20px;
 }
 
-/* Title Animation */
+/* Title */
 h1 {
-  font-size: 32px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 1s forwards;
+  font-size: 34px;
+  margin-bottom: 5px;
 }
 
 p {
   color: #aaa;
   margin-bottom: 30px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 1s 0.2s forwards;
 }
 
 /* Links */
 .link {
   display: block;
-  margin: 12px 0;
-  padding: 15px;
-  border-radius: 14px;
+  margin: 14px 0;
+  padding: 16px;
+  border-radius: 16px;
   background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
   text-decoration: none;
   color: white;
-  font-weight: bold;
+  font-weight: 600;
   transition: all 0.3s ease;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 0.6s forwards;
 }
 
-/* Delay animation for each button */
-.link:nth-child(3) { animation-delay: 0.3s; }
-.link:nth-child(4) { animation-delay: 0.4s; }
-.link:nth-child(5) { animation-delay: 0.5s; }
-.link:nth-child(6) { animation-delay: 0.6s; }
-.link:nth-child(7) { animation-delay: 0.7s; }
-.link:nth-child(8) { animation-delay: 0.8s; }
-.link:nth-child(9) { animation-delay: 0.9s; }
-
-/* Hover effect */
+/* Hover */
 .link:hover {
   background: #38bdf8;
   color: black;
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(56,189,248,0.5);
+  box-shadow: 0 10px 30px rgba(56,189,248,0.3);
 }
 
-/* WhatsApp button */
+/* WhatsApp */
 .whatsapp {
   background: #25D366;
 }
 
 .whatsapp:hover {
   background: #1ebe5d;
-  box-shadow: 0 0 20px rgba(37,211,102,0.6);
 }
 
 /* Footer */
 footer {
   margin-top: 30px;
   font-size: 12px;
-  color: #777;
-}
-
-/* Animation */
-@keyframes fadeUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  color: #666;
 }
 </style>
 </head>
@@ -104,13 +79,33 @@ footer {
 <h1>🚀 SysmanTech</h1>
 <p>Explore Our Businesses</p>
 
-<a class="link" href="#">🏪 SysmanTech Retail</a>
-<a class="link" href="#">💻 M Tech Systems</a>
-<a class="link" href="#">📦 Digital Hub</a>
-<a class="link" href="#">🖥️ HP Connect</a>
-<a class="link" href="#">☕ Sys Cafe</a>
-<a class="link" href="#">🛒 Pavilion Super Mart</a>
-<a class="link" href="#">📱 HotSpot Samsung</a>
+<a class="link" href="https://sysmante.ch">
+🏪 SysmanTech Retail
+</a>
+
+<a class="link" href="https://maps.google.com">
+💻 M Tech Systems
+</a>
+
+<a class="link" href="#">
+📦 Digital Hub
+</a>
+
+<a class="link" href="#">
+🖥️ HP Connect
+</a>
+
+<a class="link" href="#">
+☕ Sys Cafe
+</a>
+
+<a class="link" href="#">
+🛒 Pavilion Super Mart
+</a>
+
+<a class="link" href="#">
+📱 HotSpot Samsung
+</a>
 
 <a class="link whatsapp" href="https://wa.me/919947146608" target="_blank">
 💬 Chat on WhatsApp
